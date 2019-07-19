@@ -302,7 +302,7 @@ The CORS specification also states that setting origins to `"*"` (all origins) i
 
 For some CORS requests, the browser sends an additional request before making the actual request. This request is called a *preflight request*. The browser can skip the preflight request if the following conditions are true:
 
-* The request method is GET, HEAD, or POST.
+* The request method is GET or HEAD.
 * The app doesn't set request headers other than `Accept`, `Accept-Language`, `Content-Language`, `Content-Type`, or `Last-Event-ID`.
 * The `Content-Type` header, if set, has one of the following values:
   * `application/x-www-form-urlencoded`
